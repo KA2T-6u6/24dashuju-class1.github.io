@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24大数据1班 - 班级风采与学习交流平台</title>
+    <meta name="description" content="24大数据1班官方网站，展示班级特色、学习活动和学生风采，促进班级成员交流与共同成长">
+    <meta name="keywords" content="24大数据1班,大数据专业,班级风采,学习交流,学生活动">
+    <meta name="author" content="24大数据1班班委">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 可访问性和SEO相关meta标签 -->
+    <meta name="theme-color" content="#1a73e8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="24大数据1班">
+    <link rel="manifest" href="site.webmanifest" crossorigin="use-credentials">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 3h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2m9 15h2v-2h-2v2m0-4h2v-4h-2v4m-6 4h2v-2H8v2m0-4h2v-4H8v4'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        /* 关键CSS - 快速渲染首屏 */
+        :root {
+            --primary-color: #1a73e8;
+            --primary-dark: #0d47a1;
+            --secondary-color: #4caf50;
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-color: #ffffff;
+            --bg-light: #f5f5f5;
+            --border-color: #e0e0e0;
+        }
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+        }
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            top: 0;
+        }
+        .hero {
+            padding: 8rem 0 4rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-dark);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="top-nav">
+        <div class="top-nav-container">
+            <a href="#home" class="nav-logo">24大数据1班</a>
+            
+            <!-- 桌面端导航菜单 -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">首页</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">关于我们</a></li>
+                <li class="nav-item"><a href="#goals" class="nav-link">班级目标</a></li>
+
+                <li class="nav-item"><a href="#resources" class="nav-link">学习资源</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">联系我们</a></li>
+            </ul>
+            
+            <!-- 移动端菜单按钮 -->
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span>☰</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>24大数据1班 - 数据驱动，智慧未来</h2>
+                <p>我们是充满活力的24大数据1班，致力于培养数据分析能力、编程技能和创新思维。在这里，我们共同学习、共同成长，探索数据世界的无限可能。</p>
+                <div class="hero-stats" aria-label="班级数据">
+                    <div class="stat-item">
+                        <span class="stat-number">31</span>
+                        <span class="stat-text">班级成员</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <span class="stat-text">特色活动</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-text">团队凝聚力</span>
+                    </div>
+                </div>
+                <a href="#about" class="btn-primary" role="button">了解我们</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于24大数据1班</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>24大数据1班成立于2024年9月，是一个充满活力、积极向上的集体。我们班共有31名成员，来自全国各地，怀着对大数据领域的热爱和追求汇聚在一起。</p>
+                    <p>作为大数据专业的新生班级，我们致力于培养扎实的专业基础、较强的实践能力和创新思维。在班主任和各科老师的带领下，我们班形成了团结互助、拼搏进取的良好班风。</p>
+                    <p>我们定期组织各类学习交流活动，包括编程竞赛、数据分析实践、行业讲座等，不仅提升了专业技能，也增强了班级凝聚力。</p>
+                    
+                    <h3>班级理念</h3>
+                    <p>数据驱动，智慧未来，团结协作，共同成长。我们相信通过努力学习和实践，每一位同学都能成为大数据领域的优秀人才。</p>
+                    
+                    <h3>班级特色</h3>
+                    <ul>
+                        <li>学习小组制度，促进共同进步</li>
+                        <li>定期编程实战，提升实践能力</li>
+                        <li>行业前沿分享，拓展视野</li>
+                        <li>丰富多彩的班级文化活动</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                        <div class="image-placeholder" role="img" aria-label="24大数据1班班级合影" style="background-color: #e3f2fd; min-height: 200px; display: flex; align-items: center; justify-content: center; color: #1976d2; font-size: 2rem;">👨‍🎓👩‍🎓</div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 班级目标 -->
+    <section id="goals" class="goals">
+        <div class="container">
+            <h2 class="section-title">班级目标</h2>
+            <div class="goals-grid">
+                <div class="goal-item">
+                    <div class="goal-icon">📊</div>
+                    <h3>专业能力提升</h3>
+                    <p>掌握大数据核心知识和技能，包括Python编程、数据分析、机器学习等，为未来职业发展打下坚实基础。</p>
+                </div>
+                <div class="goal-item">
+                    <div class="goal-icon">🏆</div>
+                    <h3>竞赛成绩突破</h3>
+                    <p>积极参与各类学科竞赛，如数学建模、程序设计、大数据分析等，争取在省级以上比赛中获得优异成绩。</p>
+                </div>
+                <div class="goal-item">
+                    <div class="goal-icon">🤝</div>
+                    <h3>团结互助班风</h3>
+                    <p>建立良好的班级氛围，同学之间互相帮助、共同进步，形成强大的班级凝聚力和集体荣誉感。</p>
+                </div>
+                <div class="goal-item">
+                    <div class="goal-icon">💡</div>
+                    <h3>创新思维培养</h3>
+                    <p>培养学生的创新意识和实践能力，鼓励参与科研项目和创新实践，提升解决实际问题的能力。</p>
+                </div>
+                <div class="goal-item">
+                    <div class="goal-icon">📝</div>
+                    <h3>高就业率目标</h3>
+                    <p>力争班级毕业就业率达到100%，大部分同学进入知名企业或继续深造，成为大数据领域的优秀人才。</p>
+                </div>
+                <div class="goal-item">
+                    <div class="goal-icon">🌟</div>
+                    <h3>校级优秀班级</h3>
+                    <p>争取获得校级优秀班级称号，在学习、文体活动、志愿服务等方面全面发展，成为学校的标杆班级。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 学习资源 -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 class="section-title">学习资源</h2>
+            <div class="resources-grid">
+                <!-- LeetCode资源项 -->
+                <div class="resource-item">
+                    <div class="resource-icon">📝</div>
+                    <h3>刷题网站 - LeetCode</h3>
+                    <p>海量技术面试题库，拥有算法、数据结构、系统设计等 1000+题目，帮助你高效提升编程技能</p>
+                    <ul>
+                        <li>热题100</li>
+                        <li>题库</li>
+                        <li>高频SQL50题</li>
+                        <li>学习</li>
+                    </ul>
+                    <a href="https://leetcode.cn/" class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                        跳转网站
+                    </a>
+                </div>
+                <!-- 洛谷资源项 -->
+                <div class="resource-item">
+                    <div class="resource-icon">📝</div>
+                    <h3>刷题网站 - 洛谷</h3>
+                    <p>洛谷提供在线编程学习和比赛平台，帮助用户提升编程能力。</p>
+                    <ul>
+                        <li>题单列表</li>
+                        <li>比赛列表</li>
+                        <li>文章广场</li>
+                        <li>题库</li>
+                    </ul>
+                    <a href="https://www.luogu.com.cn/" class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                        跳转网站
+                    </a>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-icon">🐍</div>
+                    <h3>Python编程资料</h3>
+                    <p>Python基础教程、进阶学习资料、常用库文档和代码示例，帮助学生掌握编程技能。</p>
+                    <ul>
+                        <li>Python基础语法教程</li>
+                        <li>数据结构与算法</li>
+                        <li>Pandas数据分析</li>
+                        <li>Python项目实战案例</li>
+                    </ul>
+                    <a href="https://www.python123.io/" class="btn-secondary" role="button" target="_blank">浏览资源</a>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-icon">📊</div>
+                    <h3>数据分析工具</h3>
+                    <p>Pandas、NumPy、Matplotlib等数据分析工具的学习资源、教程和实战案例。</p>
+                    <ul>
+                        <li>数据清洗与预处理</li>
+                        <li>数据可视化技术</li>
+                        <li>统计分析方法</li>
+                        <li>案例分析与实践</li>
+                    </ul>
+                    <a href="https://search.bilibili.com/all?keyword=%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7" class="btn-secondary" target="_blank">浏览资源</a>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-icon">🤖</div>
+                    <h3>机器学习入门</h3>
+                    <p>机器学习基础理论、算法讲解、实践项目和开源框架使用指南。</p>
+                    <ul>
+                        <li>机器学习基础理论</li>
+                        <li>经典算法详解</li>
+                        <li>scikit-learn实战</li>
+                        <li>项目案例分析</li>
+                    </ul>
+                    <a href="https://search.bilibili.com/all?keyword=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8" class="btn-secondary" target="_blank">浏览资源</a>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-icon">💾</div>
+                    <h3>大数据技术栈</h3>
+                    <p>Hadoop、Spark、Hive等大数据技术的学习资料、环境搭建教程和项目实践。</p>
+                    <ul>
+                        <li>Hadoop生态系统</li>
+                        <li>Spark编程指南</li>
+                        <li>分布式计算原理</li>
+                        <li>大数据项目实践</li>
+                    </ul>
+                    <a href="https://search.bilibili.com/all?keyword=%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF%E6%A0%88" class="btn-secondary" target="_blank">浏览资源</a>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-icon">🏆</div>
+                    <h3>竞赛资源</h3>
+                    <p>各类大数据、编程竞赛的历年真题、解题思路和获奖经验分享。</p>
+                    <ul>
+                        <li>数学建模竞赛资料</li>
+                        <li>程序设计竞赛题库</li>
+                        <li>大数据分析竞赛</li>
+                        <li>获奖经验分享</li>
+                    </ul>
+                    <a href="https://www.cmathc.org.cn/stxz/" class="btn-secondary" target="_blank">浏览资源</a>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-icon">💼</div>
+                    <h3>就业指导</h3>
+                    <p>简历模板、面试技巧、行业发展趋势和企业招聘信息，帮助学生做好职业规划。</p>
+                    <ul>
+                        <li>简历制作指南</li>
+                        <li>技术面试准备</li>
+                        <li>行业发展前景</li>
+                        <li>企业招聘信息</li>
+                    </ul>
+                    <a href="https://search.bilibili.com/all?keyword=%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%B8%93%E4%B8%9A%E5%B0%B1%E4%B8%9A%E6%8C%87%E5%AF%BC" class="btn-secondary" target="_blank">浏览资源</a>
+                </div>
+                <div class="resource-item" style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:2rem;">
+                    <h3 style="color:#1a56db; text-align:center; margin-bottom:0;">更多学习内容，将在未来上传......</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>班级联系方式</h3>
+                    <p>欢迎关注24大数据1班！如果您想了解更多班级信息，请通过以下方式与我们联系。</p>
+                    <p><strong>导员：</strong>余昊宸</p>
+                    <div class="contact-social">
+                        <a href="#" id="showWechatModal" aria-label="班级微信公众号">班级微信公众号</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer" role="contentinfo" style="background:linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color:#f8fafc; padding:4rem 0; margin-top:4rem;">
+        <div class="container" style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
+            <div class="footer-content" style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:2rem; margin-bottom:2.5rem;">
+                <!-- 班级信息 -->
+                <div class="footer-logo" style="flex:1; min-width:250px;">
+                    <h3 style="font-size:1.8rem; font-weight:700; margin:0 0 0.5rem 0; color:white;">24大数据1班</h3>
+                    <p style="font-size:1rem; line-height:1.6; color:#cbd5e1; margin:0;">数据驱动，智慧未来。我们是一个团结、奋进的班集体。</p>
+                </div>
+                
+                <!-- 快速链接 -->
+                <div class="footer-links">
+                    <h4 style="font-size:1.25rem; font-weight:600; margin:0 0 1rem 0; color:white; position:relative; padding-bottom:0.5rem;">
+                        快速链接
+                        <span style="position:absolute; bottom:0; left:0; width:40px; height:3px; background:linear-gradient(90deg, #0ea5e9 0%, #0284c7 100%); border-radius:3px;"></span>
+                    </h4>
+                    <ul aria-label="页脚链接" style="list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:1rem;">
+                        <li><a href="#home" style="color:#cbd5e1; text-decoration:none; font-size:0.95rem; display:flex; align-items:center; gap:0.5rem;">
+                            <span>🏠</span> 首页
+                        </a></li>
+                        <li><a href="#about" style="color:#cbd5e1; text-decoration:none; font-size:0.95rem; display:flex; align-items:center; gap:0.5rem;">
+                            <span>👥</span> 关于我们
+                        </a></li>
+                        <li><a href="#goals" style="color:#cbd5e1; text-decoration:none; font-size:0.95rem; display:flex; align-items:center; gap:0.5rem;">
+                            <span>🎯</span> 班级目标
+                        </a></li>
+                        <li><a href="#resources" style="color:#cbd5e1; text-decoration:none; font-size:0.95rem; display:flex; align-items:center; gap:0.5rem;">
+                            <span>📚</span> 学习资源
+                        </a></li>
+                        <li><a href="#contact" style="color:#cbd5e1; text-decoration:none; font-size:0.95rem; display:flex; align-items:center; gap:0.5rem;">
+                            <span>📞</span> 联系我们
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <!-- 微信公众号 -->
+                <div class="footer-social">
+                    <h4 style="font-size:1.25rem; font-weight:600; margin:0 0 1rem 0; color:white; position:relative; padding-bottom:0.5rem;">
+                        班级微信公众号
+                        <span style="position:absolute; bottom:0; left:0; width:40px; height:3px; background:linear-gradient(90deg, #0ea5e9 0%, #0284c7 100%); border-radius:3px;"></span>
+                    </h4>
+                    <div class="wechat-container">
+                        <div class="wechat-qrcode-container" aria-label="班级微信公众号二维码" style="width:150px; height:150px; background-color:white; border-radius:12px; padding:10px; box-shadow:0 4px 12px rgba(0,0,0,0.15); margin-bottom:1rem;">
+                            <img id="footerWechatQRCode" src="qrcode/qrcode.jpg" alt="班级公众号二维码" style="width:100%; height:100%; object-fit:contain; border-radius:8px;">
+                        </div>
+                        <p class="wechat-text" style="font-size:0.95rem; color:#cbd5e1; text-align:center; margin:0; line-height:1.5;">扫码关注班级公众号<br>获取更多班级资讯和学习资源</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 底部版权信息 -->
+            <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.1); padding-top:2rem; text-align:center;">
+                <p style="color:#94a3b8; font-size:0.9rem; margin:0 0 0.5rem 0;">&copy; 2024 24大数据1班. 保留所有权利.</p>
+                <p style="color:#94a3b8; font-size:0.9rem; margin:0;">计算机学院 · 大数据专业</p>
+            </div>
+        </div>
+    </footer>
+    
+    <style>
+        .footer a:hover {
+            color:white !important;
+            transform:translateX(3px);
+        }
+        .footer .footer-logo div:hover {
+            background-color:rgba(255,255,255,0.2);
+            transform:translateY(-2px);
+        }
+        .wechat-qrcode-container:hover {
+            transform:scale(1.03);
+        }
+    </style>
+    
+    <!-- 微信公众号弹窗 -->
+    <div id="wechatModal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:2000; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s ease;">
+        <div class="modal-content" style="background:linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border-radius:20px; padding:2.5rem; max-width:420px; width:90%; position:relative; box-shadow:0 10px 40px rgba(0,0,0,0.15); transform:scale(0.95); transition:transform 0.3s ease;">
+            <button id="closeModal" class="modal-close" style="position:absolute; top:1rem; right:1rem; background-color:#e2e8f0; color:#64748b; border:none; border-radius:50%; width:36px; height:36px; font-size:1.3rem; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all 0.2s ease;">
+                &times;
+            </button>
+            <div style="text-align:center;">
+                <div style="display:inline-block; background:linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); color:white; width:80px; height:80px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem; font-size:2.5rem;">
+                    💬
+                </div>
+                <h3 style="text-align:center; margin-bottom:0.5rem; color:#0f172a; font-size:1.75rem; font-weight:600;">班级微信公众号</h3>
+                <p style="text-align:center; color:#64748b; margin-bottom:2rem; font-size:1rem;">扫描下方二维码，获取更多班级信息</p>
+                
+                <div class="qrcode-container" style="width:240px; height:240px; background-color:white; border-radius:12px; padding:12px; margin:0 auto 1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.05); display:flex; align-items:center; justify-content:center;">
+                    <img id="wechatQRCode" src="qrcode/qrcode.jpg" alt="班级公众号二维码" style="width:100%; height:100%; object-fit:contain; border-radius:8px;">
+                    <div style="display:none; flex-direction:column; align-items:center; justify-content:center; color:#94a3b8;">
+                        <div style="font-size:3rem; margin-bottom:0.5rem;">📱</div>
+                        <span style="font-size:1.1rem;">二维码位置</span>
+                    </div>
+                </div>
+                
+                <div style="background-color:#f1f5f9; border-radius:12px; padding:1rem; margin-bottom:1rem;">
+                    <p style="text-align:center; font-size:1.2rem; color:#0f172a; font-weight:600; margin:0;">2401号拾光数据集</p>
+                </div>
+                
+                <div style="display:flex; justify-content:center; gap:12px; margin-top:1.5rem;">
+                    <div style="background-color:#e0f2fe; padding:8px 12px; border-radius:8px;">
+                        <span style="color:#0284c7; font-size:0.9rem;">📢 班级通知</span>
+                    </div>
+                    <div style="background-color:#f0fdfa; padding:8px 12px; border-radius:8px;">
+                        <span style="color:#155e75; font-size:0.9rem;">📚 学习资源</span>
+                    </div>
+                    <div style="background-color:#fef3c7; padding:8px 12px; border-radius:8px;">
+                        <span style="color:#92400e; font-size:0.9rem;">🎯 班级活动</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 为弹窗添加动画效果
+        const modal = document.getElementById('wechatModal');
+        const modalContent = modal.querySelector('.modal-content');
+        const closeBtn = document.getElementById('closeModal');
+        const showModalBtn = document.getElementById('showWechatModal');
+        
+        if (showModalBtn) {
+            showModalBtn.addEventListener('click', function() {
+                modal.style.display = 'flex';
+                setTimeout(() => {
+                    modal.style.opacity = '1';
+                    modalContent.style.transform = 'scale(1)';
+                }, 10);
+            });
+        }
+        
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function() {
+                modal.style.opacity = '0';
+                modalContent.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 300);
+            });
+        }
+        
+        if (closeBtn) {
+            closeBtn.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#ef4444';
+                this.style.color = 'white';
+            });
+            
+            closeBtn.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = '#e2e8f0';
+                this.style.color = '#64748b';
+            });
+        }
+    </script>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="back-to-top" aria-label="返回顶部" aria-hidden="true" aria-pressed="false" style="display:none; position:fixed; bottom:20px; right:20px; background-color:var(--primary-color); color:white; border:none; border-radius:50%; width:50px; height:50px; font-size:1.5rem; cursor:pointer; z-index:999; transition:opacity 0.3s ease;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+    
+    <!-- 无脚本提示 -->
+    <noscript>
+        <div class="noscript-warning" style="background-color:#fff3cd; color:#856404; padding:1rem; text-align:center; font-weight:bold;">
+            <p>本网站部分功能需要JavaScript支持，请开启浏览器的JavaScript功能以获得最佳体验。</p>
+        </div>
+    </noscript>
+    
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
